@@ -23,9 +23,9 @@ function AppHeader() {
     };
     const selectAfter = (
         <Select defaultValue="BTH" className="select-after">
-            <Option value="TTT">BTH</Option>
+            <Option value="BTH">BTH</Option>
             <Option value="TTT">TTT</Option>
-            <Option value="TTT">DDD</Option>
+            <Option value="DDD">DDD</Option>
         </Select>
     );
     return (
