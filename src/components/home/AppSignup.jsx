@@ -1,13 +1,8 @@
 import React from 'react'
-import { Form, Input, Button, Checkbox } from 'antd';
-
-const { TextArea } = Input;
+import { Input, Button } from 'antd';
 
 
 function AppSignup() {
-    const onFinish = values => {
-        console.log('Received values of form: ', values);
-    };
     return (
         <div id="contact" className="block contactBlock ">
             <div className="container-fluid">

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, Col, Row, Select } from 'antd';
+import { Button, Card, Col, Row} from 'antd';
 
 
 import image1 from '../../assets/trending/trend_1.png';
@@ -8,12 +8,10 @@ import image3 from '../../assets/trending/trend_3.png';
 import image4 from '../../assets/trending/trend_4.png';
 
 
-import icon_check from '../../assets/icons/BadgeCheck.png';
-import icon_ether from '../../assets/icons/Ethereum.png';
-
 
 const { Meta } = Card;
-const { Option } = Select;
+
+
 const items = [
     {
         key: '1',
@@ -92,8 +90,8 @@ function AppTopCreator() {
                             </Col>
                         );
                     })}
-                    <a className="prev">&#10094;</a>
-                    <a className="next">&#10095;</a>
+                    <a className="prev" href='/#'>&#10094;</a>
+                    <a className="next" href='/#'>&#10095;</a>
                 </Row>
             </div>
         </div>

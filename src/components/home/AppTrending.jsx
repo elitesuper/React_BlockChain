@@ -39,8 +39,8 @@ const items = [
 const mdesc = (
     <>
         <div className='d-flex just-between'>
-            <div className='trend-vol'>Vol <img src={icon_ether}></img><span>657.2k</span></div>
-            <div className='trend-vol'>Floor <span><img src={icon_ether}></img>70</span></div>
+            <div className='trend-vol'>Vol <img src={icon_ether} alt={icon_ether}></img><span>657.2k</span></div>
+            <div className='trend-vol'>Floor <span><img src={icon_ether} alt={icon_ether}></img>70</span></div>
         </div>
     </>
 );
@@ -69,7 +69,7 @@ function AppTrending() {
                                 >
                                     <Meta 
                                         className='trending-card'
-                                        title={<>{item.title}<img src={icon_check}></img></>} 
+                                        title={<>{item.title}<img src={icon_check} alt={icon_check}></img></>} 
                                         description={mdesc}
                                         />
                                 </Card>

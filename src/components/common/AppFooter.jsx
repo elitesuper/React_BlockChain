@@ -1,5 +1,5 @@
 import React from 'react'
-import { BackTop, Row, Col } from 'antd';
+import { Row, Col } from 'antd';
 import { FacebookOutlined,InstagramOutlined,TwitterOutlined,GithubOutlined,DribbbleOutlined } from '@ant-design/icons'
 
 
@@ -32,14 +32,12 @@ const legallist = [
 ]
 
 function AppFooter() {
-    const style = {
 
-    };
     return (
         <div className="container-fluid my-footer">
             <div className="footer d-flex just-between">
                 <div className='nft-logo text-left'>
-                    <img src={logoicon}></img>
+                    <img src={logoicon} alt={logoicon}></img>
                     <p>Voomio is an omni-friendly shop for buying and selling NFTs.</p>
                     <div className='d-flex icon-list'>
                         <FacebookOutlined/>

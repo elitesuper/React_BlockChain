@@ -33,7 +33,7 @@ function AppHeader() {
             <div className="header">
                 <div className="logo" >
                     <img src={logoicon} alt="logo_icon"></img>
-                    <a href="#">VOOMIO</a>
+                    <a href="/#">VOOMIO</a>
                 </div>
                 <Input prefix={<SearchOutlined/>} className='search-collection mobileHidden' style={{ width: '30%' }} size="large" addonAfter={selectAfter} placeholder="Search for assets or collections..."/>
                 <div className="mobileVisible">

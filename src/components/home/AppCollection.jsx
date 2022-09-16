@@ -72,15 +72,15 @@ function AppCollection() {
                                 >
                                     <Meta 
                                         className='trending-card'
-                                        title={<>{item.title}<img src={icon_check}></img></>} 
+                                        title={<>{item.title}<img src={icon_check} alt={icon_check}></img></>} 
                                         />
                                 </Card>
 
                             </Col>
                         );
                     })}
-                    <a className="prev">&#10094;</a>
-                    <a className="next">&#10095;</a>
+                    <a className="prev" href='/#'>&#10094;</a>
+                    <a className="next" href='/#'>&#10095;</a>
                 </Row>
             </div>
         </div>

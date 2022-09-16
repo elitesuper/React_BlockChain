@@ -174,9 +174,9 @@
     right: -3%;
     border-radius: 20px;
   }
-  .next-spec{
+  /* .next-spec{
     right: 5%;
-  }
+  } */
   .alpha-next {
     right: 8%;
     border-radius: 20px;
@@ -218,9 +218,9 @@
   .special-list{
     overflow-y: visible !important;
   }
-  .spec-pos{
+  /* .spec-pos{
     margin-right: -10% !important;
-  }
+  } */
   .email-input{
     border: 2px solid #6549F6;
     border-radius: 10px;

@@ -69,8 +69,8 @@ function AppAlpha() {
                             </Col>
                         );
                     })}
-                    <a className="prev">&#10094;</a>
-                    <a className="next next-spec">&#10095;</a>
+                    <a className="prev" href='/#'>&#10094;</a>
+                    <a className="next next-spec" href='/#'>&#10095;</a>
                 </Row>
             </div>
         </div>

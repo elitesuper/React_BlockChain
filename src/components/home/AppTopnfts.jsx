@@ -2,10 +2,10 @@ import React from 'react'
 import { List, Select,Radio, Button } from 'antd';
 
 
-import image1 from '../../assets/trending/trend_1.png';
-import image2 from '../../assets/trending/trend_2.png';
-import image3 from '../../assets/trending/trend_3.png';
-import image4 from '../../assets/trending/trend_4.png';
+// import image1 from '../../assets/trending/trend_1.png';
+// import image2 from '../../assets/trending/trend_2.png';
+// import image3 from '../../assets/trending/trend_3.png';
+// import image4 from '../../assets/trending/trend_4.png';
 
 
 import icon_check from '../../assets/icons/BadgeCheck.png';
@@ -13,28 +13,7 @@ import icon_ether from '../../assets/icons/Ethereum.png';
 
 
 const { Option } = Select;
-const items = [
-    {
-        key: '1',
-        image: image1,
-        title: 'Bored Ape Yacht Club'
-    },
-    {
-        key: '2',
-        image: image2,
-        title: 'CryptoPunks'
-    },
-    {
-        key: '3',
-        image: image3,
-        title: 'Doodles'
-    },
-    {
-        key: '4',
-        image: image4,
-        title: 'Moonbirds'
-    }
-]
+
 const data = [
     {
         key: '1',
@@ -123,11 +102,11 @@ function AppTopnfts() {
                     renderItem={item => (
                     <>
                     <div className= 'd-flex just-between text-center nft-list-item'>
-                        <div className='pd-y-10 w-1-5'><Radio>{item.name}</Radio><img src={icon_check}></img></div>
-                        <div className='pd-y-10 w-1-5 nft-list-item-vol'><img src={icon_ether}></img>{item.volume}</div>
+                        <div className='pd-y-10 w-1-5'><Radio>{item.name}</Radio><img src={icon_check} alt={icon_check}></img></div>
+                        <div className='pd-y-10 w-1-5 nft-list-item-vol'><img src={icon_ether} alt={icon_ether}></img>{item.volume}</div>
                         <div className='pd-y-10 w-1-5 nft-list-item-span'><span>{item._24hr}</span></div>
                         <div className='pd-y-10 w-1-5 nft-list-item-span'><span>{item._7d}</span></div>
-                        <div className='pd-y-10 w-1-5 nft-list-item-vol'><img src={icon_ether}></img>{item.price}</div>
+                        <div className='pd-y-10 w-1-5 nft-list-item-vol'><img src={icon_ether} alt={icon_ether}></img>{item.price}</div>
                     </div>
                     </>
                     )}

@@ -7,11 +7,6 @@ import Moonbirds from '../../assets/anim-images/Moonbirds.png';
 import CyberKongs from '../../assets/anim-images/CyberKongs.png';
 
 
-
-function onChange(a, b, c) {
-    console.log(a, b, c);
-}
-
 // const contentStyle = {
 //     height: '160px',
 //     color: '#fff',
