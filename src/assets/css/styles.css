@@ -1,0 +1,315 @@
+@import "animation.css";
+@import "pattern.css";
+
+
+
+.connect-btn{
+    background: linear-gradient(93.69deg, #7B61FF 0%, #00DAD9 107.12%) !important;
+  }
+  .search-collection .ant-input-group .ant-input{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .search-collection .ant-input-group .ant-input-affix-wrapper{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .search-collection .ant-input-group .ant-input-group-addon{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .ant-drawer-content{
+    background-color: grey;
+  }
+  .mobile-state-btn{
+    margin-top: 20px;
+    width: 100%;
+  }
+  .image-anim{
+    width: 30%;
+    position: relative;
+  }
+  .image-anim img{
+    position: absolute;
+    max-width: 50%;
+    top: 20%;
+  }
+  .dagentoonz-left{
+    animation: move1 10s infinite linear;
+  }
+  .clonex-right{
+    right: 0%;
+    top:25% !important;
+    animation: move1 10s infinite linear;
+  }
+  .cyberkongs-left{
+    top: 55% !important;
+    left: 20%;
+    animation: move2 10s infinite linear;
+  }
+  .moonbirds-right{
+    max-width: 70% !important;
+    right: 0%;
+    top: 50% !important;
+    animation: move2 10s infinite linear;
+  }
+  .header-title{
+    font-family: 'FONTSPRING DEMO - Termina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px !important;
+    line-height: 120%;
+    background: linear-gradient(92.12deg, #FFFFFF -5.07%, #6549F6 38.89%, #00DAD9 90.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+.voomio-btn{
+    width: 30%;
+    max-width: 150px;
+    background: linear-gradient(98.93deg, #7B61FF -6.98%, #00DAD9 108.86%);
+}
+.voomio-btn-outline{
+    width: 30%;
+    max-width: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px 2px rgba(101, 73, 246, 0.4);
+    color:  rgba(101, 73, 246, 0.9);
+}
+.voomio-header{
+  font-family: 'FONTSPRING DEMO - Termina';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+}
+.voomio-select{
+  width: 200px;
+  text-align: left;
+  border: solid 1px #6549F6;
+  border-radius: 5px;
+  color: #6549F6;
+}
+.trending-card .ant-card-meta-detail{
+  width: 100%;
+}
+.trend-vol span{
+  color: black;
+  font-style: bold;
+}
+.trend-vol p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 120%;
+}
+.trend-vol h3{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+}
+.card-cover{
+  width: 100%;
+  background-color: #EF972D;
+  padding: 10% 20% 2% 20%;
+  text-align: center;
+}
+.card-cover h3{
+  padding: 5px 0px 5px 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  width: 100%;
+}
+.card-cover .creator-email{
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.creator-img{
+  width: 100%;
+  border-radius: 50% !important;
+  border:solid 4px white
+}
+.creator-btn{
+  font-family: 'Poppins';
+  font-size: 10px;
+  width: 60%;
+  color: white;
+  background: linear-gradient(98.79deg, #9B53E0 20.34%, #8551E6 77.89%);
+}
+.creator-btn-out{
+  color: #8551E6;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), linear-gradient(98.79deg, #9B53E0 20.34%, #8551E6 77.89%);
+}
+
+.row-list{
+  position: relative;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 11px 18px 11px 18px;
+    margin-top: -35px;
+    color: white !important;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 20px;
+    user-select: none;
+    background: linear-gradient(98.79deg, #9B53E0 20.34%, #8551E6 77.89%);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: -3%;
+    border-radius: 20px;
+  }
+  .next-spec{
+    right: 5%;
+  }
+  .alpha-next {
+    right: 8%;
+    border-radius: 20px;
+  }
+  .prev{
+    left:-3%;
+  }
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  .col-spec{
+    position: absolute;
+  }
+  .nfts-list{
+    width: 80%;
+    background: #FFFFFF;
+    box-shadow: 5.26833px 5.26833px 13.1708px rgba(0, 0, 0, 0.1);
+  }
+  .categories{
+    width: 60%;
+    margin: auto;
+  }
+  .tnft-panel{
+    padding: 0px 20px;
+  }
+  .nft-list-item:nth-child(odd){
+    background-color: #F0F0F0;
+  }
+  .nft-list-item-span span{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #00A825;
+    border-radius: 10px;
+  }
+  .nft-list-item-vol{
+    color: #6549F6;
+  }
+  .special-list{
+    overflow-y: visible !important;
+  }
+  .spec-pos{
+    margin-right: -10% !important;
+  }
+  .email-input{
+    border: 2px solid #6549F6;
+    border-radius: 10px;
+  }
+
+  .stay-loop{
+    font-family: 'FONTSPRING DEMO - Termina';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    color: #7B61FF;
+  }
+
+  .ant-layout-footer{
+    background-color: #fff !important;
+    color: black !important;
+  }
+  .footer{
+    border-top: solid 1px #E5E7EB;
+    border-bottom: solid 1px #E5E7EB;
+    padding-bottom: 20px;
+  }
+  .nft-logo{
+    margin-top: 5%;
+    width: 35%;
+    height: 30px;
+  }
+  .nft-contact{
+    margin-top: 5%;
+    width: 60%;
+  }
+  .icon-list{
+    font-size: 25px;
+    color: grey;
+  }
+  .icon-list span{
+    padding-right: 10px;
+  }
+  .footer-content{
+    font-family: 'Neue Haas Grotesk Text Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* gray/500 */
+
+    color: #6B7280;
+    margin-bottom: 4px !important;
+  }
+  .footer-header{
+    font-family: 'Neue Haas Grotesk Text Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* gray/400 */
+
+    color: #9CA3AF;
+    margin-bottom: 10px !important;
+  }
+  /* .col-user h3{} */
+@media only screen and (max-width:900px){
+  .image-anim{
+    display: none;
+  }
+  .search-collection{
+    display: none;
+  }
+  .categories{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .next, .prev{
+    display: none;
+  }
+}
