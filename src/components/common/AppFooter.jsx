@@ -76,7 +76,7 @@ function AppFooter() {
                     </Row>
                 </div>
             </div>
-            <div className='pd-t-20'>© 2022 Voomio, LLC. All rights reserved.</div>
+            <div className='pd-t-20 ft-neue'>© 2022 Voomio, LLC. All rights reserved.</div>
         </div>
     )
 }

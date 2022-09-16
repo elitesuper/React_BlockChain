@@ -33,7 +33,7 @@ function AppHero() {
                         </div>
                         <div className="content">
                             <h3 className='header-title'>{item.title}</h3>
-                            <p>{item.content}</p>
+                            <p className='col-b f-s-20'>{item.content}</p>
                             <div className="btnHolder d-flex just-center">
                                 <Button className="voomio-btn" type="primary" shape="round" size="large">Explore</Button>
                                 <Button className="voomio-btn-outline" shape="round" size="large">Create</Button>

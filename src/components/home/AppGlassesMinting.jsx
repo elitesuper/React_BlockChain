@@ -50,8 +50,8 @@ function AppGlassesMinting() {
                                             <img className="m-a" src={item.icon_img} alt={item.icon_img}></img>
                                         </div>
                                         <div className='w-2-3'>
-                                            <h3>{item.subtitle}</h3>
-                                            <p>{item.content}</p>
+                                            <h3 className='mint-subtitle'>{item.subtitle}</h3>
+                                            <p className='mint-content'>{item.content}</p>
                                         </div>
                                     </div>
                                 ))}

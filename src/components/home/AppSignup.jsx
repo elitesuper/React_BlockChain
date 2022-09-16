@@ -6,7 +6,7 @@ function AppSignup() {
     return (
         <div id="contact" className="block contactBlock ">
             <div className="container-fluid">
-                <div className="titleHolder text-left w-5-10 m-a">
+                <div className="titleHolder text-left w-5-10 m-a signup-content">
                     <h2 className='stay-loop'>Stay in the loop</h2>
                     <p>Join our mailing list to stay in the loop with our newest feature releases, NFT drops and tips and tricks for navigating Voomio.</p>
                     <div className='d-flex just-center'>

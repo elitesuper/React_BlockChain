@@ -44,8 +44,8 @@ const items = [
 const mdesc = (
     <>
         <div className='wd-100'>
-            <div className='wd-100'>CryptoGuruTV</div>
-            <div className='wd-100 pd-t-10'>1M views - 8 hours ago</div>
+            <div className='wd-100 neue-ft'>CryptoGuruTV</div>
+            <div className='wd-100 pd-t-10 neue-ft'>1M views - 8 hours ago</div>
         </div>
     </>
 );
@@ -54,7 +54,7 @@ function AppAlpha() {
         <div id="feature" className="block aboutBlock">
             <div className="container-fluid special-list">
                 <div className="titleHolder d-flex just-between">
-                    <div className='voomio-header'>Top Creators</div>
+                    <div className='voomio-header'>Alpha</div>
                 </div>
                 <Row className="row-list spec-pos" gutter={[16, 16]}>
                     {items.map(item => {

@@ -1,8 +1,33 @@
 @import "animation.css";
 @import "pattern.css";
 
+@font-face {
+  font-family: 'MyNeue';
+  src: url('../fonts/neue.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'MyPoppins';
+  src: url('../fonts/poppins.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'MyTermina';
+  src: url("../fonts/termina.otf") format("opentype");
+}
 
-
+p, button, input, li, a, h3, .neue-ft{
+  font-family: "MyNeue";
+}
+.logo a{
+  font-family: 'MyTermina';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.ant-radio-wrapper span{
+  font-family: "MyNeue";
+}
 .connect-btn{
     background: linear-gradient(93.69deg, #7B61FF 0%, #00DAD9 107.12%) !important;
   }
@@ -55,7 +80,7 @@
     animation: move2 10s infinite linear;
   }
   .header-title{
-    font-family: 'FONTSPRING DEMO - Termina';
+    font-family: 'MyTermina';
     font-style: normal;
     font-weight: 700;
     font-size: 80px !important;
@@ -79,7 +104,7 @@
     color:  rgba(101, 73, 246, 0.9);
 }
 .voomio-header{
-  font-family: 'FONTSPRING DEMO - Termina';
+  font-family: 'MyTermina';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -100,14 +125,14 @@
   font-style: bold;
 }
 .trend-vol p{
-  font-family: 'Poppins';
+  font-family: 'MyPoppins';
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
   line-height: 120%;
 }
 .trend-vol h3{
-  font-family: 'Poppins';
+  font-family: 'MyPoppins';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -121,7 +146,7 @@
 }
 .card-cover h3{
   padding: 5px 0px 5px 0px;
-  font-family: 'Poppins';
+  font-family: 'MyPoppins';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -139,7 +164,7 @@
   border:solid 4px white
 }
 .creator-btn{
-  font-family: 'Poppins';
+  font-family: 'MyPoppins';
   font-size: 10px;
   width: 60%;
   color: white;
@@ -228,7 +253,7 @@
   }
 
   .stay-loop{
-    font-family: 'FONTSPRING DEMO - Termina';
+    font-family: 'MyTermina';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -252,8 +277,19 @@
   }
   .nft-logo{
     margin-top: 5%;
-    width: 35%;
+    width: 30%;
     height: 30px;
+  }
+  .nft-logo p{
+    font-family: 'MyNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    /* or 150% */
+
+
+    color: #250C50;
   }
   .nft-contact{
     margin-top: 5%;
@@ -267,7 +303,7 @@
     padding-right: 10px;
   }
   .footer-content{
-    font-family: 'Neue Haas Grotesk Text Pro';
+    font-family: 'MyNeue';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -281,7 +317,7 @@
     margin-bottom: 4px !important;
   }
   .footer-header{
-    font-family: 'Neue Haas Grotesk Text Pro';
+    font-family: 'MyNeue';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -295,6 +331,50 @@
 
     color: #9CA3AF;
     margin-bottom: 10px !important;
+  }
+  .ft-neue{
+    font-family: 'MyNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+
+    /* gray/400 */
+
+    color: #9CA3AF;
+
+  }
+  .signup-content p{
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .ant-anchor-link-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .mint-content{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+  }
+  .mint-subtitle{
+    font-family: 'MyTermina';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
   }
   /* .col-user h3{} */
 @media only screen and (max-width:900px){
