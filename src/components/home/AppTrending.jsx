@@ -55,7 +55,7 @@ function AppTrending() {
                             <Option value="option_1">Past 24 hours</Option>
                             <Option value="option_2">Past 48 hours</Option>
                             <Option value="option_3">Past 56 hours</Option>
-                        </Select>       
+                        </Select>
                     </div>
                 </div>
                 <Row gutter={[16, 16]}>

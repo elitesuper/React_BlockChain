@@ -17,6 +17,9 @@
 p, button, input, li, a, h3, .neue-ft{
   font-family: "MyNeue";
 }
+.termina-ft{
+  font-family: 'MyTermina';
+}
 .logo a{
   font-family: 'MyTermina';
   font-style: normal;
@@ -44,6 +47,14 @@ p, button, input, li, a, h3, .neue-ft{
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
   }
+  .search-profile{
+    border-radius: 25px;
+    border: solid 2px #6549F6;
+  }
+  .search-profile .ant-input{
+    border-radius: 25px;
+  }
+
   .ant-drawer-content{
     background-color: grey;
   }
@@ -387,10 +398,106 @@ p, button, input, li, a, h3, .neue-ft{
   .categories{
     display: none;
   }
+  .profile-character{
+    display: none;
+  }
+  .profile-name{
+    width: 100% !important;
+  }
 }
 
+.profile-info{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px !important;
+}
+.sub-header{
+  background: linear-gradient(93.69deg, #7B61FF 0%, #00DAD9 107.12%);
+}
+.profile-character{
+  position: absolute;
+  top: -60%;
+  width: 80%;
+  border-radius: 50%;
+  border: solid 10px white;
+}
+.profile-action{
+  width: 50%;
+}
+.profile-email{
+  font-family: 'Myneue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #6549F6;
+
+}
+.profile-tag{
+  font-family: 'MyPoppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #6549F6;
+
+}
+.profile-tag span{
+  padding: 0px 4px;
+  background: #F4EEFF;
+  border-radius: 8px;
+}
+
+.profile-icon{
+  background: #F4EEFF;
+  color: #6549F6;
+}
+/* .twi-ins button{
+  margin-left: 1%;
+} */
+.ant-tabs-tab{
+  font-family: 'MyNeue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.ant-tabs-ink-bar {
+  height: 5px !important;
+  background:  #6549F6 !important;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+  color: #6549F6 !important;
+}
+.ant-tabs-nav-list{
+  transform: translate(30%,0) !important;
+}
+.top-header{
+  width: 100%;
+  display: inline !important;
+}
+
+.profile-card{
+  border-radius: 10px ;
+}
 @media only screen and (max-width:768px){
   .next, .prev{
     display: none;
+  }
+}
+
+@media only screen and (max-width:512px){
+  .next, .prev{
+    display: none;
+  }
+  .profile-info{
+    display: inline-block;
+    width: 100%;
+  }
+  .profile-action{
+    padding-top: 20px;
+    width: 100%;
   }
 }
