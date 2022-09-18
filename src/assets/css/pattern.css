@@ -118,3 +118,11 @@
 .border-none{
     border: none !important;
 }
+.ra-r-20{
+    border-bottom-right-radius: 20% !important;
+    border-top-right-radius: 20% !important;
+}
+.ra-l-20{
+    border-bottom-left-radius: 20% !important;
+    border-top-left-radius: 20% !important;
+}

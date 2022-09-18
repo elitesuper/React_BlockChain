@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {SlidersOutlined, SearchOutlined, RetweetOutlined} from '@ant-design/icons';
 import { BsGrid, BsGrid3X3Gap } from "react-icons/bs";
-import {Button, Input, Select, Row, Col, Card} from 'antd';
+import {Button, Input, Select, Row, Col, Card, Radio} from 'antd';
 
 
 import image1 from '../../assets/trending/trend_1.png';
@@ -77,8 +77,12 @@ function TabPage (props){
             <Button size="large" type="text" icon={<SlidersOutlined />}/>
             <Input prefix={<SearchOutlined/>} className='search-profile' style={{ width: '30%' }} size="large" placeholder="Search for assets or collections..."/>
             <div className="f-l m-x-5">
-                <Button size='large' value="large" icon={<BsGrid/>}></Button>
-                <Button size='large' value="default" icon={<BsGrid3X3Gap/>}></Button>
+                {/* <Button size='large' value="large" icon={<BsGrid/>}></Button>
+                <Button size='large' value="default" icon={<BsGrid3X3Gap/>}></Button> */}
+                 <Radio.Group defaultValue="a" size="large">
+                    <Radio.Button className="tab-profile-type ra-l-20" value="a"><BsGrid style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
+                    <Radio.Button className="tab-profile-type ra-r-20" value="b"><BsGrid3X3Gap style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
+                </Radio.Group>
             </div>
             <Select defaultValue="option_1" className='voomio-select f-l' size='large'>
                 <Option value="option_1">Price low to high</Option>
