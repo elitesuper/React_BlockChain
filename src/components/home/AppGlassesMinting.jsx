@@ -36,7 +36,7 @@ function AppGlassesMinting() {
         <div id="hero">
             <Carousel>
                 {
-                    <div className='d-flex just-center'>
+                    <div className='d-flex just-center pd-b-10'>
                         <div className='image-anim mobileHidden'>
                             <img className='dagentoonz-left' src={DegenToonz} alt="DegenToonz"></img>
                             <img className='cyberkongs-left' src={CyberKongs} alt="CyberKongs"></img>
@@ -57,7 +57,7 @@ function AppGlassesMinting() {
                                 ))}
                             </div>
                             <div className="btnHolder d-flex just-center">
-                                <Button className="voomio-btn" type="primary" shape="round" size="large">Explore</Button>
+                                <Button className="voomio-btn m-r-10" type="primary" shape="round" size="large">Explore</Button>
                                 <Button className="voomio-btn-outline" shape="round" size="large">Create</Button>
                             </div>
                         </div>

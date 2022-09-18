@@ -61,6 +61,7 @@ function AppAlpha() {
                         return (
                             <Col xs={{ span: 12 }} sm={{ span: 8 }} md={{ span: 4 }} key={item.key}>
                                 <Card
+                                    className='border-none'
                                     hoverable
                                     cover={<img className="p-l-6" alt={item.title} src={item.image} />}
                                 >

@@ -43,6 +43,9 @@ p, button, input, li, a, h3, .neue-ft{
     border-bottom-left-radius: 25px;
     display: flex !important;
   }
+  .search-collection .ant-input-group .ant-input-affix-wrapper .ant-input{
+    font-size: 15px;
+  }
   .search-collection .ant-input-group .ant-input-group-addon{
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
@@ -189,13 +192,16 @@ p, button, input, li, a, h3, .neue-ft{
 .row-list{
   position: relative;
 }
+.ant-card-body{
+  padding: 10px;
+}
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 11px 18px 11px 18px;
+    padding: 6px 16px 6px 16px;
     margin-top: -35px;
     color: white !important;
     font-weight: bold;
@@ -232,6 +238,7 @@ p, button, input, li, a, h3, .neue-ft{
   }
   .nfts-list{
     width: 80%;
+    margin: auto !important;
     background: #FFFFFF;
     box-shadow: 5.26833px 5.26833px 13.1708px rgba(0, 0, 0, 0.1);
   }

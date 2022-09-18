@@ -40,6 +40,9 @@
 .pd-b-0{
     padding-bottom: 0px;
 }
+.pd-b-10{
+    padding-bottom: 10px;
+}
 .m-b-2{
     margin-bottom: 2px !important;
 }
@@ -72,6 +75,9 @@
 }
 .m-r-0{
     margin-right: 0px;
+}
+.m-r-10{
+    margin-right: 10px !important;
 }
 .w-5-10{
     width: 50% !important;
@@ -108,4 +114,7 @@
 }
 .f-l{
     float: right;
+}
+.border-none{
+    border: none !important;
 }
