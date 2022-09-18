@@ -66,13 +66,14 @@ function AppCollection() {
                             <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 6 }} key={item.key}>
 
                                 <Card 
+                                    className='collection-card'
                                     hoverable
                                     cover={<><img alt={item.title} src={item.image} />
                                     </>}
                                 >
                                     <Meta 
                                         className='trending-card'
-                                        title={<>{item.title}<img src={icon_check} alt={icon_check}></img></>} 
+                                        title={<div className='collection-title d-flex'><img src={item.user} alt={item.user}/><div className='colection-pd'>{item.title}<img src={icon_check} alt={icon_check}></img></div></div>} 
                                         />
                                 </Card>
 

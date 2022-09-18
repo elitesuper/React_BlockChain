@@ -74,6 +74,62 @@ p, button, input, li, a, h3, .neue-ft{
     max-width: 50%;
     top: 20%;
   }
+  .minting-item{
+    padding: 4% 7%;
+  }
+  .left_1{
+    top:10% !important;
+    animation: move2 10s infinite linear;
+  }
+  .left_2{
+    top: 30% !important;
+    right: 30%;
+    animation: move2 10s infinite linear;
+  }
+  .left_3{
+    top: 40% !important;
+    max-width: 55% !important;
+    animation: move1 10s infinite linear;
+  }
+  .left_4{
+    top: 60% !important;
+    max-width: 45% !important;
+    animation: move2 10s infinite linear;
+  }
+  .right_1{
+    max-width: 50% !important;
+    top:10% !important;
+    right: 0%;
+    animation: move2 10s infinite linear;
+  }
+  .right_2{
+    max-width: 70% !important;
+    top:30% !important;
+    right: -10%;
+    animation: move1 10s infinite linear;
+  }
+  .right_3{
+    max-width: 55% !important;
+    top:55% !important;
+    right: -10%;
+    animation: move1 10s infinite linear;
+  }
+  .right_4{
+    max-width: 40% !important;
+    top:75% !important;
+    right: 0%;
+    animation: move2 10s infinite linear;
+  }
+  .collection-title img{
+    max-width: 25%;
+  }
+  .collection-card .ant-card-body{
+    margin-top: -10%;
+  }
+  .colection-pd{
+    padding-top: 10%;
+  }
+
   .dagentoonz-left{
     animation: move1 10s infinite linear;
   }

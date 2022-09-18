@@ -6,6 +6,15 @@ import CloneX from '../../assets/anim-images/CloneX.png';
 import Moonbirds from '../../assets/anim-images/Moonbirds.png';
 import CyberKongs from '../../assets/anim-images/CyberKongs.png';
 
+import image1 from '../../assets/anim2-images/image1.png';
+import image2 from '../../assets/anim2-images/image2.png';
+import image3 from '../../assets/anim2-images/image3.png';
+import image4 from '../../assets/anim2-images/image4.png';
+import image5 from '../../assets/anim2-images/image5.png';
+import image6 from '../../assets/anim2-images/image6.png';
+import image7 from '../../assets/anim2-images/image7.png';
+import image8 from '../../assets/anim2-images/image8.png';
+
 import icon_1 from '../../assets/minting/icon_1.png';
 import icon_2 from '../../assets/minting/icon_2.png';
 import icon_3 from '../../assets/minting/icon_3.png';
@@ -38,14 +47,16 @@ function AppGlassesMinting() {
                 {
                     <div className='d-flex just-center pd-b-10'>
                         <div className='image-anim mobileHidden'>
-                            <img className='dagentoonz-left' src={DegenToonz} alt="DegenToonz"></img>
-                            <img className='cyberkongs-left' src={CyberKongs} alt="CyberKongs"></img>
+                            <img className='left_1' src={image1} alt={image1}></img>
+                            <img className='left_4' src={image4} alt={image4}></img>
+                            <img className='left_3' src={image3} alt={image3}></img>
+                            <img className='left_2' src={image2} alt={image2}></img>
                         </div>
                         <div className="content">
                             <h3 className='header-title text-center'>Gassless Minting</h3>
                             <div>
                                 {items.map(item=>(
-                                    <div className='w-1-1 d-flex just-center'>
+                                    <div className='w-1-1 d-flex just-center minting-item'>
                                         <div className='w-1-3'>
                                             <img className="m-a" src={item.icon_img} alt={item.icon_img}></img>
                                         </div>
@@ -62,8 +73,10 @@ function AppGlassesMinting() {
                             </div>
                         </div>
                         <div className='image-anim mobileHidden'>
-                            <img className='moonbirds-right' src={Moonbirds} alt="Moonbirds"></img>
-                            <img className='clonex-right' src={CloneX} alt="CloneX"></img>
+                            <img className='right_3' src={image5} alt={image5}></img>
+                            <img className='right_2' src={image7} alt={image7}></img>
+                            <img className='right_1' src={image8} alt={image8}></img>
+                            <img className='right_4' src={image6} alt={image6}></img>
                         </div>
                     </div>
                 }
