@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {SlidersOutlined, SearchOutlined, RetweetOutlined} from '@ant-design/icons';
 import { BsGrid, BsGrid3X3Gap } from "react-icons/bs";
 import {Button, Input, Select, Row, Col, Card} from 'antd';
@@ -12,6 +12,8 @@ import image4 from '../../assets/trending/trend_4.png';
 
 import icon_check from '../../assets/icons/BadgeCheck.png';
 import icon_ether from '../../assets/icons/Ethereum.png';
+
+
 
 
 const { Meta } = Card;
@@ -68,6 +70,7 @@ const mdesc = (
 );
 
 function TabPage (props){
+
     return (
         <>
         <div className="tab-header">

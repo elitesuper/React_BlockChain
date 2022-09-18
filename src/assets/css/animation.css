@@ -27,3 +27,18 @@
         transform: translateY(0);
     }
 }
+
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal-x{
+    transform: translateX(150px);
+}
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+}

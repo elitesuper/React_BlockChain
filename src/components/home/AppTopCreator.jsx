@@ -67,7 +67,7 @@ function AppTopCreator() {
                 <div className="titleHolder d-flex just-between">
                     <div className='voomio-header'>Top Creators</div>
                 </div>
-                <Row className="row-list" gutter={[16, 16]}>
+                <Row className="row-list reveal" gutter={[16, 16]}>
                     {items.map(item => {
                         return (
                             <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 6 }} key={item.key}>

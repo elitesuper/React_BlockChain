@@ -56,7 +56,7 @@ function AppAlpha() {
                 <div className="titleHolder d-flex just-between">
                     <div className='voomio-header'>Alpha</div>
                 </div>
-                <Row className="row-list spec-pos" gutter={[16, 16]}>
+                <Row className="row-list spec-pos reveal" gutter={[16, 16]}>
                     {items.map(item => {
                         return (
                             <Col xs={{ span: 12 }} sm={{ span: 8 }} md={{ span: 4 }} key={item.key}>
