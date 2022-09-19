@@ -26,12 +26,12 @@ function AppHero() {
         <div id="hero" className="heroBlock">
             <Carousel>
                 {
-                    <div className='d-flex just-center'>
+                    <div className='d-flex just-between'>
                         <div className='image-anim mobileHidden'>
                             <img className='dagentoonz-left' src={DegenToonz} alt="DegenToonz"></img>
                             <img className='cyberkongs-left' src={CyberKongs} alt="CyberKongs"></img>
                         </div>
-                        <div className="content mobile-style">
+                        <div className="content hero-info mobile-style">
                             <h3 className='header-title'>{item.title}</h3>
                             <p className='col-b f-s-20'>{item.content}</p>
                             <div className="btnHolder d-flex just-center">

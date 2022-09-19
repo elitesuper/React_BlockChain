@@ -39,8 +39,8 @@ const items = [
 const mdesc = (
     <>
         <div className='d-flex just-between'>
-            <div className='trend-vol .neue-ft'>Vol <img src={icon_ether} alt={icon_ether}></img><span>657.2k</span></div>
-            <div className='trend-vol .neue-ft'>Floor <img src={icon_ether} alt={icon_ether}></img><span>70</span></div>
+            <div className='trend-vol neue-ft'>Vol <img src={icon_ether} alt={icon_ether}></img><span>657.2k</span></div>
+            <div className='trend-vol neue-ft'>Floor <img src={icon_ether} alt={icon_ether}></img><span>70</span></div>
         </div>
     </>
 );

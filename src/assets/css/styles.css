@@ -17,6 +17,9 @@
 p, button, input, li, a, h3, .neue-ft{
   font-family: "MyNeue";
 }
+.heroBlock p{
+  font-size: 4vh !important;
+}
 .termina-ft{
   font-family: 'MyTermina';
 }
@@ -175,7 +178,7 @@ p, button, input, li, a, h3, .neue-ft{
     font-family: 'MyTermina';
     font-style: normal;
     font-weight: 700;
-    font-size: 80px !important;
+    font-size: 13vh !important;
     line-height: 120%;
     background: linear-gradient(92.12deg, #FFFFFF -5.07%, #6549F6 38.89%, #00DAD9 90.46%);
     -webkit-background-clip: text;
@@ -184,22 +187,25 @@ p, button, input, li, a, h3, .neue-ft{
     text-fill-color: transparent;
   }
 .voomio-btn{
-    width: 30%;
-    max-width: 150px;
+    width: 20vh;
+    /* max-width: 150px; */
     background: linear-gradient(98.93deg, #7B61FF -6.98%, #00DAD9 108.86%);
+    height: 6vh !important;
+    font-size: 3vh !important;
 }
 .voomio-btn-outline{
-    width: 30%;
-    max-width: 150px;
+    width: 20vh;
     background: #FFFFFF;
     box-shadow: 0px 0px 6px 2px rgba(101, 73, 246, 0.4);
     color:  rgba(101, 73, 246, 0.9);
+    height: 6vh !important;
+    font-size: 3vh !important;
 }
 .voomio-header{
   font-family: 'MyTermina';
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 5vh;
   line-height: 100%;
 }
 .voomio-select{
@@ -215,6 +221,9 @@ p, button, input, li, a, h3, .neue-ft{
 .trend-vol span{
   color: black;
   font-style: bold;
+}
+.trend-vol{
+  font-size: 2vh;
 }
 .trend-vol p{
   font-family: 'MyPoppins';
@@ -453,7 +462,7 @@ p, button, input, li, a, h3, .neue-ft{
   .ant-anchor-link-title{
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 3vh;
     line-height: 22px;
   }
 
@@ -573,6 +582,9 @@ p, button, input, li, a, h3, .neue-ft{
 .trend-title{
   display: flex;
 }
+.trend-title{
+  font-size: 3vh;
+}
 .trend-title img{
   margin: auto auto auto 2px;
 }
@@ -580,9 +592,12 @@ p, button, input, li, a, h3, .neue-ft{
   display: flex;
 }
 .trend-vol img{
-  margin: 0px 0px auto 0px;
+  margin: auto !important;
 }
 
+.creator-btn{
+  font-size: 1.5vh;
+}
 .create-vol h3{
   font-family: 'MyPoppins';
   font-style: normal;
@@ -615,6 +630,12 @@ p, button, input, li, a, h3, .neue-ft{
 }
 .nft-list-item-vol{
   margin: auto;
+}
+@media only screen and (max-width:1400px){
+  .hero-info{
+    padding-top: 10vh !important;
+    max-width: 650px !important;
+  }
 }
 @media only screen and (max-width:1024px){
   .categories{
@@ -711,7 +732,7 @@ p, button, input, li, a, h3, .neue-ft{
     display: none;
   }
   .header-title{
-    font-size: 50px !important;
+    font-size: 5rem !important;
   }
   .mobile-style{
     margin-top: 25%;
