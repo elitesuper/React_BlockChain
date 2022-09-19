@@ -1,8 +1,7 @@
-import React, {useEffect} from "react";
+import React, {useState} from "react";
 import {SlidersOutlined, SearchOutlined, RetweetOutlined} from '@ant-design/icons';
 import { BsGrid, BsGrid3X3Gap } from "react-icons/bs";
 import {Button, Input, Select, Row, Col, Card, Radio} from 'antd';
-
 
 import image1 from '../../assets/trending/trend_1.png';
 import image2 from '../../assets/trending/trend_2.png';
@@ -71,6 +70,13 @@ const mdesc = (
 
 function TabPage (props){
 
+    const [aligntype, setAligntype] = useState(1);
+
+    const onChange = (e) =>{
+        console.log('radio chcecked', e.target.value);
+        setAligntype(e.target.value);
+    }
+
     return (
         <>
         <div className="tab-header">
@@ -79,9 +85,9 @@ function TabPage (props){
             <div className="f-l m-x-5">
                 {/* <Button size='large' value="large" icon={<BsGrid/>}></Button>
                 <Button size='large' value="default" icon={<BsGrid3X3Gap/>}></Button> */}
-                 <Radio.Group defaultValue="a" size="large">
-                    <Radio.Button className="tab-profile-type ra-l-20" value="a"><BsGrid style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
-                    <Radio.Button className="tab-profile-type ra-r-20" value="b"><BsGrid3X3Gap style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
+                 <Radio.Group defaultValue={aligntype} onChange={onChange} size="large">
+                    <Radio.Button className="tab-profile-type ra-l-20" value={1}><BsGrid style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
+                    <Radio.Button className="tab-profile-type ra-r-20" value={2}><BsGrid3X3Gap style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
                 </Radio.Group>
             </div>
             <Select defaultValue="option_1" className='voomio-select f-l' size='large'>
@@ -95,21 +101,23 @@ function TabPage (props){
             <Row className="pd-t-10" gutter={[16, 16]}>
                     {items.map(item => {
                         return (
-                            <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 6 }} key={item.key}>
-
-                                <Card
-                                    className="profile-card"
-                                    hoverable
-                                    cover={<img alt={item.title} src={item.image} />}
-                                >
-                                    <Meta 
-                                        className='trending-card'
-                                        title={<>{item.title}<img src={icon_check} alt={icon_check}></img></>} 
-                                        description={mdesc}
-                                        />
-                                </Card>
-
+                            ((aligntype ==1)?(
+                                <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 6 }} key={item.key}>
+                                    <Card
+                                        className="profile-card"
+                                        hoverable
+                                        cover={<img alt={item.title} src={item.image} />}
+                                    >
+                                        <Meta 
+                                            className='trending-card'
+                                            title={<>{item.title}<img src={icon_check} alt={icon_check}></img></>} 
+                                            description={mdesc}
+                                            />
+                                    </Card>
                             </Col>
+                            ):(
+                                <>ffff</>
+                            ))
                         );
                     })}
                 </Row>
