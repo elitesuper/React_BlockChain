@@ -136,6 +136,16 @@ p, button, input, li, a, h3, .neue-ft{
 .nft-list-item div{
   display: flex;
 }
+
+.nft-list-item-name{
+  justify-content: center;
+}
+.nft-list-item-vol{
+  justify-content: center;
+}
+.nft-list-item-span{
+  justify-content: center;
+}
 .nft-list-item-name label{
   margin: auto 0px auto auto;
 }
@@ -628,6 +638,9 @@ p, button, input, li, a, h3, .neue-ft{
   .create-btn{
     width: 30%;
   }
+  .voomio-select{
+    width: 150px;
+  }
 }
 
 @media only screen and (max-width:540px){
@@ -666,5 +679,24 @@ p, button, input, li, a, h3, .neue-ft{
   }
   .mobile-style{
     margin-top: 25%;
+  }
+  .nft-list .ant-list-header{
+    display: none;
+  }
+  .nft-list-item{
+    display: block !important;
+  }
+  .nft-list-item-name{
+    width: 100% !important;
+    margin: auto !important;
+  }
+  .nft-list-item-vol{
+    margin: auto !important;
+  }
+  .nft-list-item-span{
+    margin: auto !important;
+  }
+  .creator-btn{
+    width: 60% !important;
   }
 }

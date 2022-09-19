@@ -88,7 +88,7 @@ function AppTopnfts() {
                     </div>
                 </div>
                 <List
-                    className='pd-x-30 pd-b-30'
+                    className='pd-x-30 pd-b-30 nft-list'
                     header={<>
                     <div className= 'd-flex just-between text-center'>
                         <div className='pd-y-10 w-1-5'>Collection</div>
