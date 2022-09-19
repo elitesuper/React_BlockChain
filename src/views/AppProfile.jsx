@@ -4,6 +4,7 @@ import character from '../assets/images/character.png';
 import TabPage from '../components/profile/TabPage';
 import AppSignup from '../components/home/AppSignup';
 import React from 'react';
+// import ActivityTabPage from '../components/profile/ActivityTabPage';
 
 
 
@@ -23,7 +24,7 @@ function AppProfile() {
                 <div className='pd-t-20'>
                     <Row>
                         <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 4 }}>
-                            <img src={character} className='profile-character'></img>
+                            <img src={character} alt={character} className='profile-character'></img>
                         </Col>
                         <Col xs={{span:24}} sm={{span:24}} md={{span:20}}>
                             <div className="titleHolder profile-info">

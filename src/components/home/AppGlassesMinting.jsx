@@ -1,11 +1,6 @@
 import React from 'react'
 import { Button, Carousel } from 'antd';
 
-import DegenToonz from '../../assets/anim-images//DegenToonz.png';
-import CloneX from '../../assets/anim-images/CloneX.png';
-import Moonbirds from '../../assets/anim-images/Moonbirds.png';
-import CyberKongs from '../../assets/anim-images/CyberKongs.png';
-
 import image1 from '../../assets/anim2-images/image1.png';
 import image2 from '../../assets/anim2-images/image2.png';
 import image3 from '../../assets/anim2-images/image3.png';

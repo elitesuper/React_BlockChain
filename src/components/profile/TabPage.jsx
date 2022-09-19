@@ -24,56 +24,64 @@ const items = [
         image: image1,
         vector: icon_vector,
         tag: "#111559",
-        title: 'Bored Ape Yacht Club'
+        title: 'Bored Ape Yacht Club',
+        type:1
     },
     {
         key: '2',
         image: image2,
         vector: icon_vector,
         tag: "#111559",
-        title: 'CryptoPunks'
+        title: 'CryptoPunks',
+        type:2
     },
     {
         key: '3',
         image: image3,
         vector: icon_vector,
         tag: "#111559",
-        title: 'Doodles'
+        title: 'Doodles',
+        type:1
     },
     {
         key: '4',
         image: image4,
         vector: icon_vector,
         tag: "#111559",
-        title: 'Moonbirds'
+        title: 'Moonbirds',
+        type:2
     },
     {
         key: '5',
         image: image3,
         vector: icon_vector,
         tag: "#111559",
-        title: 'Doodles'
+        title: 'Doodles',
+        type:1,
     },
     {
         key: '6',
         image: image1,
         vector: icon_vector,
         tag: "#111559",
-        title: 'Doodles'
+        title: 'Doodles',
+        type:2,
     },
     {
         key: '7',
         image: image2,
         vector: icon_vector,
         tag: "#111559",
-        title: 'CryptoPunks'
+        title: 'CryptoPunks',
+        type:1
     },
     {
         key: '8',
         image: image3,
         vector: icon_vector,
         tag: "#111559",
-        title: 'Doodles'
+        title: 'Doodles',
+        type:2
     }
 ]
 
@@ -96,6 +104,14 @@ const mdesc = (val) => (
 );
 
 function TabPage (props){
+    
+
+    var filtereddata = items;
+    if(props.tabid == 2)
+    {
+        filtereddata = items.filter(item => item.type == 2);
+        console.log(filtereddata);
+    }
 
     const [aligntype, setAligntype] = useState(1);
 
@@ -124,9 +140,9 @@ function TabPage (props){
             </Select>
         </div>
         <Row className="pd-t-10 wd-100">
-            <Row><Button size="small" type="text" icon={<RetweetOutlined />}/>44 items</Row>
-            <Row className="pd-t-10" gutter={[16, 16]}>
-                    {(aligntype==1) ? items.map(item => {
+            <Row className="wd-100"><Button size="small" type="text" icon={<RetweetOutlined />}/>44 items</Row>
+            <Row className="pd-t-10 wd-100" gutter={[16, 16]}>
+                    {(aligntype==1) ? filtereddata.map(item => {
                         return (
                             <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 6 }} key={item.key}>
                                 <Card
@@ -143,7 +159,7 @@ function TabPage (props){
                             </Col>
                         );
                     }):(
-                        items.map(item => {
+                        filtereddata.map(item => {
                             return (
                                 <div className="align-type-2" key={item.key}>
                                     <Card
@@ -163,6 +179,15 @@ function TabPage (props){
                     )}
                 </Row>
         </Row>
+        {(props.tabid == 2)&&(
+            <Row className="justify-center py-24">
+                <Button type="primary" className='connect-btn mobile-state-btn create-btn' shape="round" size="large">
+                    + Create New
+                </Button>
+            </Row>
+        )
+            
+        }
         {/* {props.tabid} */}
         </>
     )

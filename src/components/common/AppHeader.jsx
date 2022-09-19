@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Web3Modal from "web3modal";
 import { ethers } from "ethers";
 import WalletConnectProvider from "@walletconnect/web3-provider";
-import Web3 from "web3"
+// import Web3 from "web3"
 
 import { Anchor } from 'antd';
 import { Drawer, Button } from 'antd';
@@ -89,28 +89,28 @@ async function onConnect(){
     await refreshAccountData();
 }
 
-async function disconnet() {
-    console.log("Opening a dialog", web3Modal);
-    try {
-        // provider = await web3Modal.connect();
-        await web3Modal.clearCachedProvider();
-        // await window.ethereum.disable()
-        window.location.reload()
-    } catch (e) {
-        console.log("Could not get a wallet connection", e);
-        return;
-    }   
-}
+// async function disconnet() {
+//     console.log("Opening a dialog", web3Modal);
+//     try {
+//         // provider = await web3Modal.connect();
+//         await web3Modal.clearCachedProvider();
+//         // await window.ethereum.disable()
+//         window.location.reload()
+//     } catch (e) {
+//         console.log("Could not get a wallet connection", e);
+//         return;
+//     }   
+// }
 
 function AppHeader() {
 
-    const [acc,setacc] = useState()
+    // const [acc,setacc] = useState()
 
     useEffect(() => {
         init();
         getAccount();
         if (web3Modal.cachedProvider) {
-            setacc(true)
+            // setacc(true)
         }
     }, []); 
 

@@ -51,26 +51,26 @@ function AppFooter() {
                     <Row className='text-left'>
                         <Col span={6}>
                             <div className='footer-header'>SOLUTIONS</div>
-                            {solutionlist.map(data=>(
-                                <p className='footer-content'>{data.data}</p>
+                            {solutionlist.map((data, key)=>(
+                                <p className='footer-content' key={key}>{data.data}</p>
                             ))}
                         </Col>
                         <Col span={6}>
                             <div className='footer-header'>SUPPORT</div>  
-                            {supportlist.map(data=>(
-                                <p className='footer-content'>{data.data}</p>
+                            {supportlist.map((data, key)=>(
+                                <p className='footer-content' key={key}>{data.data}</p>
                             ))}                              
                         </Col>
                         <Col span={6}>
-                            <div className='footer-header'>COMPANY</div>
-                            {companylist.map(data=>(
-                                <p className='footer-content'>{data.data}</p>
+                            <div className='footer-header' >COMPANY</div>
+                            {companylist.map((data, key)=>(
+                                <p className='footer-content' key={key}>{data.data}</p>
                             ))}
                         </Col>
                         <Col span={6}>
                             <div className='footer-header'>LEGAL</div>
-                            {legallist.map(data=>(
-                                <p className='footer-content'>{data.data}</p>
+                            {legallist.map((data, key)=>(
+                                <p className='footer-content' key={key}>{data.data}</p>
                             ))}
                         </Col>
                     </Row>
