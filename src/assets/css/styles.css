@@ -630,7 +630,7 @@ p, button, input, li, a, h3, .neue-ft{
   }
 }
 
-@media only screen and (max-width:512px){
+@media only screen and (max-width:540px){
   .next, .prev{
     display: none;
   }
@@ -660,5 +660,11 @@ p, button, input, li, a, h3, .neue-ft{
   }
   .nft-contact{
     display: none;
+  }
+  .header-title{
+    font-size: 50px !important;
+  }
+  .mobile-style{
+    margin-top: 25%;
   }
 }

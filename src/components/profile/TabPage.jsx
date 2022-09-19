@@ -185,10 +185,7 @@ function TabPage (props){
                     + Create New
                 </Button>
             </Row>
-        )
-            
-        }
-        {/* {props.tabid} */}
+        )}
         </>
     )
 }
