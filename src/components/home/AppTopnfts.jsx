@@ -102,7 +102,7 @@ function AppTopnfts() {
                     renderItem={item => (
                     <>
                     <div className= 'd-flex just-between text-center nft-list-item'>
-                        <div className='pd-y-10 w-1-5'><Radio>{item.name}</Radio><img src={icon_check} alt={icon_check}></img></div>
+                        <div className='pd-y-10 w-1-5 nft-list-item-name'><Radio>{item.name}</Radio><img src={icon_check} alt={icon_check}></img></div>
                         <div className='pd-y-10 w-1-5 nft-list-item-vol'><img src={icon_ether} alt={icon_ether}></img>{item.volume}</div>
                         <div className='pd-y-10 w-1-5 nft-list-item-span'><span>{item._24hr}</span></div>
                         <div className='pd-y-10 w-1-5 nft-list-item-span'><span>{item._7d}</span></div>

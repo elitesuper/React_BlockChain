@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {SlidersOutlined, SearchOutlined, RetweetOutlined} from '@ant-design/icons';
 import { BsGrid, BsGrid3X3Gap } from "react-icons/bs";
-import {Button, Input, Select, Row, Col, Card, Radio} from 'antd';
+import {Button, Input, Select, Row, Col, Card, Radio, Tag} from 'antd';
 
 import image1 from '../../assets/trending/trend_1.png';
 import image2 from '../../assets/trending/trend_2.png';
@@ -11,60 +11,87 @@ import image4 from '../../assets/trending/trend_4.png';
 
 import icon_check from '../../assets/icons/BadgeCheck.png';
 import icon_ether from '../../assets/icons/Ethereum.png';
-
+import icon_vector from '../../assets/icons/icon_vector.png';
 
 
 
 const { Meta } = Card;
-const {Option} = Select;
+const { Option } = Select;
 
 const items = [
     {
         key: '1',
         image: image1,
+        vector: icon_vector,
+        tag: "#111559",
         title: 'Bored Ape Yacht Club'
     },
     {
         key: '2',
         image: image2,
+        vector: icon_vector,
+        tag: "#111559",
         title: 'CryptoPunks'
     },
     {
         key: '3',
         image: image3,
+        vector: icon_vector,
+        tag: "#111559",
         title: 'Doodles'
     },
     {
         key: '4',
         image: image4,
+        vector: icon_vector,
+        tag: "#111559",
         title: 'Moonbirds'
     },
     {
         key: '5',
         image: image3,
+        vector: icon_vector,
+        tag: "#111559",
         title: 'Doodles'
     },
     {
         key: '6',
         image: image1,
+        vector: icon_vector,
+        tag: "#111559",
         title: 'Doodles'
     },
     {
         key: '7',
         image: image2,
+        vector: icon_vector,
+        tag: "#111559",
         title: 'CryptoPunks'
     },
     {
         key: '8',
         image: image3,
+        vector: icon_vector,
+        tag: "#111559",
         title: 'Doodles'
     }
 ]
-const mdesc = (
+
+const mdesc = (val) => (
     <>
-        <div className='wd-100'>
-            <div className='trend-vol neue-ft f-l'>Floor<img src={icon_ether} alt={icon_ether}></img><span>70</span></div>
-        </div>
+        {(val==1)?(
+            <div className='wd-100'>
+                <div className='trend-vol neue-ft f-l'>Floor<img src={icon_ether} alt={icon_ether}></img><span>70</span></div>
+            </div>
+        ):(
+            <div>
+            <div className="absolute vector-icon"><img src={icon_vector}></img></div>
+            <div className='wd-100 flex justify-between'>
+                <Tag className="custom-tag" color="#F4EEFF">#2db7f5</Tag>
+                <div className='trend-vol neue-ft f-l'>Floor<img src={icon_ether} alt={icon_ether}></img><span>70</span></div>
+            </div>
+            </div>
+        )}
     </>
 );
 
@@ -96,30 +123,44 @@ function TabPage (props){
                 <Option value="option_3">latest</Option>
             </Select>
         </div>
-        <Row className="pd-t-10">
+        <Row className="pd-t-10 wd-100">
             <Row><Button size="small" type="text" icon={<RetweetOutlined />}/>44 items</Row>
             <Row className="pd-t-10" gutter={[16, 16]}>
-                    {items.map(item => {
+                    {(aligntype==1) ? items.map(item => {
                         return (
-                            ((aligntype ==1)?(
-                                <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 6 }} key={item.key}>
+                            <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 6 }} key={item.key}>
+                                <Card
+                                    className="profile-card"
+                                    hoverable
+                                    cover={<img alt={item.title} src={item.image} />}
+                                >
+                                    <Meta 
+                                        className='trending-card'
+                                        title={<div className="trend-title">{item.title}<img src={icon_check} alt={icon_check}></img></div>} 
+                                        description={mdesc}
+                                        />
+                                </Card>
+                            </Col>
+                        );
+                    }):(
+                        items.map(item => {
+                            return (
+                                <div className="align-type-2" key={item.key}>
                                     <Card
-                                        className="profile-card"
+                                        className="profile-card relative"
                                         hoverable
                                         cover={<img alt={item.title} src={item.image} />}
                                     >
                                         <Meta 
                                             className='trending-card'
-                                            title={<>{item.title}<img src={icon_check} alt={icon_check}></img></>} 
-                                            description={mdesc}
+                                            title={<div className="trend-title">{item.title}<img src={icon_check} alt={icon_check}></img></div>} 
+                                            description={mdesc(aligntype)}
                                             />
                                     </Card>
-                            </Col>
-                            ):(
-                                <>ffff</>
-                            ))
-                        );
-                    })}
+                                </div>
+                            );
+                        })
+                    )}
                 </Row>
         </Row>
         {/* {props.tabid} */}

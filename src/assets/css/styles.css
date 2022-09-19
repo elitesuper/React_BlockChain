@@ -128,8 +128,20 @@ p, button, input, li, a, h3, .neue-ft{
   }
   .colection-pd{
     padding-top: 10%;
+    display: flex;
   }
-
+.colection-pd img{
+  margin: 6px 0px auto auto;
+}
+.nft-list-item div{
+  display: flex;
+}
+.nft-list-item-name label{
+  margin: auto 0px auto auto;
+}
+.nft-list-item-name img{
+  margin: auto auto auto 0px;
+}
   .dagentoonz-left{
     animation: move1 10s infinite linear;
   }
@@ -507,6 +519,9 @@ p, button, input, li, a, h3, .neue-ft{
   color: #6549F6;
 
 }
+.custom-tag{
+  color: #6549F6;
+}
 .profile-tag span{
   padding: 0px 4px;
   background: #F4EEFF;
@@ -546,10 +561,16 @@ p, button, input, li, a, h3, .neue-ft{
   border-radius: 10px ;
   filter: drop-shadow(5.26833px 5.26833px 13.1708px rgba(0, 0, 0, 0.1));
 }
-
+.align-type-2{
+  width: 20%;
+  padding: 5px;
+}
 @media only screen and (max-width:768px){
   .next, .prev{
     display: none;
+  }
+  .align-type-2{
+    width: 25%;
   }
 }
 
@@ -565,7 +586,57 @@ p, button, input, li, a, h3, .neue-ft{
     padding-top: 20px;
     width: 100%;
   }
+  .align-type-2{
+    width: 50%;
+  }
+  .signup-content{
+    width: 100% !important;
+  }
 }
 .tab-profile-type{
   padding-top: 5px;
+}
+.logo{
+  display: flex;
+}
+.header .logo a{
+  margin: auto;
+  margin-left: 15px;
+}
+.trend-title{
+  display: flex;
+}
+.trend-title img{
+  margin: auto auto auto 2px;
+}
+.trend-vol{
+  display: flex;
+}
+.trend-vol img{
+  margin: 0px 0px auto 0px;
+}
+
+.create-vol h3{
+  font-family: 'MyPoppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 90%;
+  margin-bottom: 2px;
+}
+
+.create-vol p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 90%;
+}
+.vector-icon{
+    padding: 2px;
+    top: -1px;
+    left: -1px;
+    background: white;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
