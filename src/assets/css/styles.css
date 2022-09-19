@@ -473,23 +473,6 @@ p, button, input, li, a, h3, .neue-ft{
     line-height: 100%;
   }
   /* .col-user h3{} */
-@media only screen and (max-width:900px){
-  .image-anim{
-    display: none;
-  }
-  .search-collection{
-    display: none;
-  }
-  .categories{
-    display: none;
-  }
-  .profile-character{
-    display: none;
-  }
-  .profile-name{
-    width: 100% !important;
-  }
-}
 
 .profile-info{
   display: flex;
@@ -627,7 +610,48 @@ p, button, input, li, a, h3, .neue-ft{
 .create-btn{
   width: 20%;
 }
+@media only screen and (max-width:1024px){
+  .categories{
+    margin-left: 7%;
+  }
+  .header .search-collection{
+    display: none;
+  }
+  .card-cover h3{
+    font-size: 14px;
+  }
+  .create-vol h3{
+    font-size: 14px;
+  }
+  .create-vol p{
+    font-size: 10px !important;
+  }
+}
 
+@media only screen and (max-width:912px){
+  .categories{
+    margin-left: 7%;
+  }
+}
+@media only screen and (max-width:900px){
+  .image-anim{
+    display: none;
+  }
+  .search-collection{
+    display: none;
+  }
+  .profile-character{
+    display: none;
+  }
+  .profile-name{
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width:820px){
+  .categories{
+    margin-left: 2%;
+  }
+}
 @media only screen and (max-width:768px){
   .next, .prev{
     display: none;
@@ -640,6 +664,12 @@ p, button, input, li, a, h3, .neue-ft{
   }
   .voomio-select{
     width: 150px;
+  }
+  .categories{
+    margin-left: 12%;
+  }
+  .hidden-btn{
+    display: none;
   }
 }
 

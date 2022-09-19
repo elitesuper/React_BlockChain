@@ -60,7 +60,7 @@ const data = [
 function AppTopnfts() {
     return (
         <div id="feature" className="block aboutBlock">
-            <div className="container-fluid nfts-list reveal reveal-x">
+            <div className="container-fluid nfts-list reveal reveal">
                 <div className="titleHolder d-flex just-center pd-t-40 pd-b-0">
                     <div className='voomio-header'>Top Nfts</div>
                 </div>

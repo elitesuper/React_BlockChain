@@ -63,7 +63,7 @@ function AppCollection() {
                 <Row className="row-list reveal" gutter={[16, 16]}>
                     {items.map(item => {
                         return (
-                            <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 6 }} key={item.key}>
+                            <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 6 }} key={item.key}>
 
                                 <Card 
                                     className='collection-card'
