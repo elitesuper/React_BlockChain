@@ -37,15 +37,15 @@ const items = [
 const mhead = (
     <>
         <div className='d-flex just-between'>
-            <div className='trend-vol'>
+            <div className='create-vol'>
                 <h3>12</h3>
                 <p>Following</p>
             </div>
-            <div className='trend-vol'>
+            <div className='create-vol'>
                 <h3>12m</h3>
                 <p>Follows</p>
             </div>
-            <div className='trend-vol'>
+            <div className='create-vol'>
                 <h3>15</h3>
                 <p>Collections</p>
             </div>
