@@ -610,9 +610,15 @@ p, button, input, li, a, h3, .neue-ft{
 .create-btn{
   width: 20%;
 }
+.nft-list-item-span{
+  margin: auto;
+}
+.nft-list-item-vol{
+  margin: auto;
+}
 @media only screen and (max-width:1024px){
   .categories{
-    margin-left: 7%;
+    margin-left: 10%;
   }
   .header .search-collection{
     display: none;
