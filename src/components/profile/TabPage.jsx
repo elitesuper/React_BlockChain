@@ -89,14 +89,14 @@ const mdesc = (val) => (
     <>
         {(val==1)?(
             <div className='wd-100'>
-                <div className='trend-vol neue-ft f-l'>Floor<img src={icon_ether} alt={icon_ether}></img><span>70</span></div>
+                <div className='f-l text-base md:text-xs lg:text-xl flex'>Floor<img className="my-auto" src={icon_ether} alt={icon_ether}></img><span>70</span></div>
             </div>
         ):(
             <div>
             <div className="absolute vector-icon"><img src={icon_vector}></img></div>
-            <div className='wd-100 flex justify-between'>
-                <Tag className="custom-tag" color="#F4EEFF">#2db7f5</Tag>
-                <div className='trend-vol neue-ft f-l'>Floor<img src={icon_ether} alt={icon_ether}></img><span>70</span></div>
+            <div className='wd-100 flex justify-between '>
+                <Tag className="text-base my-auto md:text-xs lg:text-xl profile-tag" color="#F4EEFF">#2db7f5</Tag>
+                <div className='text-base md:text-xs lg:text-xl f-l d-flex'>Floor<img className="my-auto" src={icon_ether} alt={icon_ether}></img><span>70</span></div>
             </div>
             </div>
         )}
@@ -122,13 +122,11 @@ function TabPage (props){
 
     return (
         <>
-        <div className="tab-header">
+        <div className="tab-header mobileHidden">
             <Button size="large" type="text" icon={<SlidersOutlined />}/>
             <Input prefix={<SearchOutlined/>} className='search-profile' style={{ width: '30%' }} size="large" placeholder="Search for assets or collections..."/>
             <div className="f-l m-x-5">
-                {/* <Button size='large' value="large" icon={<BsGrid/>}></Button>
-                <Button size='large' value="default" icon={<BsGrid3X3Gap/>}></Button> */}
-                 <Radio.Group defaultValue={aligntype} onChange={onChange} size="large">
+                <Radio.Group defaultValue={aligntype} onChange={onChange} size="large">
                     <Radio.Button className="tab-profile-type ra-l-20" value={1}><BsGrid style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
                     <Radio.Button className="tab-profile-type ra-r-20" value={2}><BsGrid3X3Gap style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
                 </Radio.Group>
@@ -152,8 +150,8 @@ function TabPage (props){
                                 >
                                     <Meta 
                                         className='trending-card'
-                                        title={<div className="trend-title">{item.title}<img src={icon_check} alt={icon_check}></img></div>} 
-                                        description={mdesc}
+                                        title={<div className="text-1xl md:text-xs lg:text-2xl 2xl:text-3xl flex">{item.title}<img className="my-auto" src={icon_check} alt={icon_check}></img></div>} 
+                                        description={mdesc(aligntype)}
                                         />
                                 </Card>
                             </Col>
@@ -181,7 +179,7 @@ function TabPage (props){
         </Row>
         {(props.tabid == 2)&&(
             <Row className="justify-center py-24">
-                <Button type="primary" className='connect-btn mobile-state-btn create-btn' shape="round" size="large">
+                <Button type="primary" className='connect-btn mobile-state-btn create-btn text-base' shape="round" size="large">
                     + Create New
                 </Button>
             </Row>

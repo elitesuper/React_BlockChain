@@ -187,10 +187,10 @@ function AppHeader() {
                         visible={visible}
                     >
                         <Anchor targetOffset="65">
-                            <Link href="#explore" title="Explore" />
-                            <Link href="#ranking" title="Ranking" />
-                            <Link href="#resourses" title="Resourses" />
-                            <Link href="#works" title="Create" />
+                            <Link className='text-base' href="#explore" title="Explore" />
+                            <Link className='text-base' href="#ranking" title="Ranking" />
+                            <Link className='text-base' href="#resourses" title="Resourses" />
+                            <Link className='text-base' href="#works" title="Create" />
                         </Anchor>
                         <Button type="primary" onClick={()=> onConnect()} className='connect-btn mobile-state-btn' shape="round" size="large">
                             Connect Wallet
@@ -202,10 +202,10 @@ function AppHeader() {
 
                 <div className="mobileHidden">
                     <Anchor targetOffset="65">
-                        <Link href="#explore" title="Explore" />
-                        <Link href="#ranking" title="Ranking" />
-                        <Link href="#resourses" title="Resourses" />
-                        <Link href="#works" title="Create" />
+                        <Link className='text-base' href="#explore" title="Explore" />
+                        <Link className='text-base' href="#ranking" title="Ranking" />
+                        <Link className='text-base' href="#resourses" title="Resourses" />
+                        <Link className='text-base' href="#works" title="Create" />
                     </Anchor>
                 </div>
 

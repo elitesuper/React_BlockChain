@@ -14,12 +14,19 @@
   src: url("../fonts/termina.otf") format("opentype");
 }
 
-p, button, input, li, a, h3, .neue-ft{
+p, button, input, li, a, h3, h4, .neue-ft{
   font-family: "MyNeue";
 }
 h2{
   font-family: 'MyTermina';
 }
+
+.header .logo a {
+  margin-left: 15px;
+  color: white;
+  font-family: 'MyTermina';
+}
+
 .hero-info h2{
   background: linear-gradient(92.12deg, #FFFFFF -5.07%, #6549F6 38.89%, #00DAD9 90.46%);
   -webkit-background-clip: text;
@@ -335,6 +342,12 @@ h2{
   .nft-list-item:nth-child(odd){
     background-color: #F0F0F0;
   }
+  .activity-list:nth-child(odd){
+    background-color: #F0F0F0;
+  }
+  .activity-list:nth-child(even){
+    background-color: white;
+  }
   .nft-list-item-span span{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #00A825;
     border-radius: 10px;
@@ -458,8 +471,6 @@ h2{
   .ant-anchor-link-title{
     font-style: normal;
     font-weight: 500;
-    font-size: 3vh;
-    line-height: 22px;
   }
 
   .mint-content{
@@ -501,8 +512,6 @@ h2{
   font-family: 'Myneue';
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
 
   color: #6549F6;
 
@@ -511,10 +520,9 @@ h2{
   font-family: 'MyPoppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 10px;
-  line-height: 15px;
   /* identical to box height */
   color: #6549F6;
+  margin: auto 0px auto 0px;
 
 }
 .custom-tag{
@@ -626,7 +634,6 @@ h2{
 @media only screen and (max-width:1400px){
   .hero-info{
     padding-top: 10vh !important;
-    /* max-width: 650px !important; */
   }
 }
 @media only screen and (max-width:1024px){
@@ -689,9 +696,6 @@ h2{
   }
   .header-title{
     font-size: 3rem !important;
-  }
-  .ant-anchor-link-title{
-    font-size: 2vh !important;
   }
   .connect-btn{
     display: none;
@@ -772,4 +776,7 @@ h2{
   .creator-btn{
     width: 60% !important;
   }
+}
+.activity-avatar{
+  height: 90%;
 }

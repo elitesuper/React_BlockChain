@@ -4,6 +4,7 @@ import character from '../assets/images/character.png';
 import TabPage from '../components/profile/TabPage';
 import AppSignup from '../components/home/AppSignup';
 import React from 'react';
+import ActivityTabPage from '../components/profile/ActivityTabPage';
 // import ActivityTabPage from '../components/profile/ActivityTabPage';
 
 
@@ -28,23 +29,23 @@ function AppProfile() {
                         </Col>
                         <Col xs={{span:24}} sm={{span:24}} md={{span:20}}>
                             <div className="titleHolder profile-info">
-                                <div className='voomio-header profile-name'>
+                                <div className='voomio-header profile-name text-3xl lg:text-4xl 2xl:text-5xl'>
                                     Extrasoho
                                     <Row className='pd-t-10'>
-                                        <Col span={12}><div className='profile-email'>@extrasoho</div></Col>
-                                        <Col span={12} className="m-a"><div className='profile-tag'><span>JOINED MAY 2022</span></div></Col>
+                                        <Col span={12}><div className='profile-email text-base'>@extrasoho</div></Col>
+                                        <Col span={12} className="m-a"><div className='profile-tag text-xs'><span>JOINED MAY 2022</span></div></Col>
                                     </Row>
                                 </div>
                                 <div className='d-flex just-between profile-action'>
-                                    <Button className='creator-btn wd-40' shape='round'>+ Follow</Button>
-                                    <Button className='creator-btn creator-btn-out wd-40' shape='round'>0x007...373px</Button>
+                                    <Button className='creator-btn wd-40 text-base' shape='round'>+ Follow</Button>
+                                    <Button className='creator-btn creator-btn-out wd-40 text-base' shape='round'>0x007...373px</Button>
                                     <Button className='profile-icon' shape="circle" icon={<MailOutlined />} />
                                     <Button className='profile-icon' shape="circle" icon={<MoreOutlined />} />
                                 </div>
                             </div>
                             <Row>
                                 <Col xs={{span:24}} sm={{span:10}} md={{span:10}}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                </Col>
+                                <p className='text-base 2xl:text-2xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                </Col>
                                 <Col xs={{span:12}} sm={{span:5}} md={{span:2}}>
                                     <p className='m-b-2 f-s-14'>Following</p>
                                     <h3 className='termina-ft'>12</h3>
@@ -69,7 +70,7 @@ function AppProfile() {
                             return {
                                 label: tabname,
                                 key: id,
-                                children: <TabPage tabid={id}></TabPage>,
+                                children: (id==3)?(<ActivityTabPage/>):(<TabPage tabid={id}></TabPage>),
                             };
                             })}
                         />
