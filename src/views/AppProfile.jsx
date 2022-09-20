@@ -1,15 +1,20 @@
-import {Row, Col, Button, Tabs} from 'antd';
+import React,{useState} from 'react';
+import {Row, Col, Button, Tabs, } from 'antd';
 import { MailOutlined, MoreOutlined, InstagramFilled, TwitterOutlined} from '@ant-design/icons';
 import character from '../assets/images/character.png';
 import TabPage from '../components/profile/TabPage';
 import AppSignup from '../components/home/AppSignup';
-import React from 'react';
 import ActivityTabPage from '../components/profile/ActivityTabPage';
 // import ActivityTabPage from '../components/profile/ActivityTabPage';
 
 
 
 function AppProfile() {
+
+    const[tabpage, SetTabpage] = useState(1)
+    const tabbuttonclicked =(key, e)=>{
+        SetTabpage(key)
+    }
     const tablist = [
         "Collection",
         "Created",
@@ -21,8 +26,8 @@ function AppProfile() {
         <div className="block pd-b-0">
             <div className='pd-y-80 w-100 sub-header'>
             </div>
-                <div className='pd-t-20'>
             <div className='container-fluid'>
+                <div className='pd-t-20'>
                     <Row>
                         <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 4 }}>
                             <img src={character} alt={character} className='profile-character'></img>
@@ -61,22 +66,25 @@ function AppProfile() {
                             </Row>
                         </Col>
                     </Row>
-                    </div>
+
                     <div className='wd-100 pd-t-20'>
                         <Tabs
                             defaultActiveKey="1"
+                            onTabClick={(key, e)=>tabbuttonclicked(key,e)}
                             items={tablist.map((name, i) => {
                             const id = String(i + 1);
                             const tabname = name
                             return {
                                 label: tabname,
                                 key: id,
-                                children: (id==3)?(<ActivityTabPage/>):(<TabPage tabid={id}></TabPage>),
+                                children:"",
                             };
                             })}
                         />
                     </div>
+                    </div>
                 </div>
+                {(tabpage==3)?(<ActivityTabPage/>):(<TabPage tabid={tabpage}></TabPage>)}
             <AppSignup></AppSignup>
         </div>
     )

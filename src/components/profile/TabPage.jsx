@@ -127,8 +127,8 @@ function TabPage (props){
             <Input prefix={<SearchOutlined/>} className='search-profile' style={{ width: '30%' }} size="large" placeholder="Search for assets or collections..."/>
             <div className="f-l m-x-5">
                 <Radio.Group defaultValue={aligntype} onChange={onChange} size="large">
-                    <Radio.Button className="tab-profile-type ra-l-20" value={1}><BsGrid style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
-                    <Radio.Button className="tab-profile-type ra-r-20" value={2}><BsGrid3X3Gap style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
+                    <Radio.Button className="tab-profile-type pd-t-10 ra-l-20" value={1}><BsGrid style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
+                    <Radio.Button className="tab-profile-type pd-t-10 ra-r-20" value={2}><BsGrid3X3Gap style={{ fontSize: '20px', color: '#08c' }} /></Radio.Button>
                 </Radio.Group>
             </div>
             <Select defaultValue="option_1" className='voomio-select f-l' size='large'>
