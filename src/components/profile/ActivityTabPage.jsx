@@ -182,12 +182,12 @@ function ActivityTabPage(){
                     <List
                     className='pd-b-30 nft-list'
                     header={<Row>
-                            <Col className='text-center' span={9}>Item</Col>
-                            <Col className='text-center' span={3}>Price</Col>
-                            <Col className='text-center' span-={2}>Quantity</Col>
-                            <Col className='text-center' span={3}>From</Col>
-                            <Col className='text-center' span={3}>To</Col>
-                            <Col className='text-center' span={4}>Time</Col>
+                            <Col className='text-center font-spec-1 text-1xl' span={9}>Item</Col>
+                            <Col className='text-center font-spec-1 text-1xl' span={3}>Price</Col>
+                            <Col className='text-center font-spec-1 text-1xl' span-={2}>Quantity</Col>
+                            <Col className='text-center font-spec-1 text-1xl' span={3}>From</Col>
+                            <Col className='text-center font-spec-1 text-1xl' span={3}>To</Col>
+                            <Col className='text-center font-spec-1 text-1xl' span={4}>Time</Col>
                         </Row>}
                     itemLayout="horizontal"
                     dataSource={data}

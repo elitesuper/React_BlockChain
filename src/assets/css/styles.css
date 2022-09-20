@@ -783,3 +783,10 @@ h2{
 .filter-tag{
   border-radius: 10px;
 }
+.font-spec-1{
+  font-family: 'MyNeue';
+  font-style: normal;
+  font-weight: 500;
+  /* font-size: 18px; */
+  line-height: 120%;
+}
