@@ -19,6 +19,9 @@
 .wd-50{
     width: 50% !important;
 }
+.wd-80{
+    width: 80% !important;
+}
 .wd-40{
     width: 40% !important;
 }
@@ -31,6 +34,9 @@
 .pd-t-20{
     padding-top: 20px;
 }
+.pd-t-28{
+    padding-top: 28px;
+}
 .pd-t-40{
     padding-top: 40px;
 }
@@ -42,6 +48,9 @@
 }
 .m-b-2{
     margin-bottom: 2px !important;
+}
+.m-t-28{
+    margin-top: 28px;
 }
 .m-x-5{
     margin: 0px 5px;
@@ -125,6 +134,9 @@
 }
 .wd-20{
     width: 20%;
+}
+.wd-90{
+    width: 90% !important;
 }
 .col-spec-1{
     color: #919191;
