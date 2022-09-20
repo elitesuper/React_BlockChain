@@ -17,8 +17,23 @@
 p, button, input, li, a, h3, .neue-ft{
   font-family: "MyNeue";
 }
-.heroBlock p{
-  font-size: 4vh !important;
+h2{
+  font-family: 'MyTermina';
+}
+.hero-info h2{
+  background: linear-gradient(92.12deg, #FFFFFF -5.07%, #6549F6 38.89%, #00DAD9 90.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.glasses-info h2{
+  background: linear-gradient(92.12deg, #FFFFFF -5.07%, #6549F6 38.89%, #00DAD9 90.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-bottom: 10px;
 }
 .termina-ft{
   font-family: 'MyTermina';
@@ -26,8 +41,6 @@ p, button, input, li, a, h3, .neue-ft{
 .logo a{
   font-family: 'MyTermina';
   font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
@@ -174,18 +187,6 @@ p, button, input, li, a, h3, .neue-ft{
     top: 50% !important;
     animation: move2 10s infinite linear;
   }
-  .header-title{
-    font-family: 'MyTermina';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13vh !important;
-    line-height: 120%;
-    background: linear-gradient(92.12deg, #FFFFFF -5.07%, #6549F6 38.89%, #00DAD9 90.46%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
 .voomio-btn{
     width: 20vh;
     /* max-width: 150px; */
@@ -205,8 +206,6 @@ p, button, input, li, a, h3, .neue-ft{
   font-family: 'MyTermina';
   font-style: normal;
   font-weight: 700;
-  font-size: 5vh;
-  line-height: 100%;
 }
 .voomio-select{
   width: 200px;
@@ -634,7 +633,7 @@ p, button, input, li, a, h3, .neue-ft{
 @media only screen and (max-width:1400px){
   .hero-info{
     padding-top: 10vh !important;
-    max-width: 650px !important;
+    /* max-width: 650px !important; */
   }
 }
 @media only screen and (max-width:1024px){
@@ -698,6 +697,37 @@ p, button, input, li, a, h3, .neue-ft{
   .hidden-btn{
     display: none;
   }
+  .header-title{
+    font-size: 3rem !important;
+  }
+  .ant-anchor-link-title{
+    font-size: 2vh !important;
+  }
+  .connect-btn{
+    display: none;
+  }
+  .hero-info{
+    margin: auto;
+  }
+  .hero-info p{
+    font-size: 2vh !important;
+  }
+  .creator-btn{
+    font-size: 1vh !important;
+    width: 80%;
+  }
+  .card-cover h3{
+    font-size: 1vh;
+  }
+  .trend-title{
+    font-size: 1.5vh !important;
+  }
+  .neue-ft{
+    font-size: 0.8vh !important;
+  }
+  .trend-vol img{
+    height: 1vh !important;
+  }
 }
 
 @media only screen and (max-width:540px){
@@ -732,7 +762,7 @@ p, button, input, li, a, h3, .neue-ft{
     display: none;
   }
   .header-title{
-    font-size: 5rem !important;
+    font-size: 3rem !important;
   }
   .mobile-style{
     margin-top: 25%;

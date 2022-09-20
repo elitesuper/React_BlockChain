@@ -49,7 +49,7 @@ function AppTrending() {
         <div id="feature" className="block aboutBlock">
             <div className="container-fluid">
                 <div className="titleHolder d-flex just-between">
-                    <div className='voomio-header'>Trendings</div>
+                    <div className='voomio-header text-3xl lg:text-4xl 2xl:text-5xl'>Trendings</div>
                     <div>    
                         <Select defaultValue="option_1" className='voomio-select mobileHidden' size='large'>
                             <Option value="option_1">Past 24 hours</Option>

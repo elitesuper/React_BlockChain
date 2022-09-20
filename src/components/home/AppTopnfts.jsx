@@ -62,7 +62,7 @@ function AppTopnfts() {
         <div id="feature" className="block aboutBlock">
             <div className="container-fluid nfts-list reveal reveal">
                 <div className="titleHolder d-flex just-center pd-t-40 pd-b-0">
-                    <div className='voomio-header'>Top Nfts</div>
+                    <div className='voomio-header text-3xl lg:text-4xl 2xl:text-5xl'>Top Nfts</div>
                 </div>
                 <div className='d-flex just-between categories'>
                     <div>    

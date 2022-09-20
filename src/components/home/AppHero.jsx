@@ -26,15 +26,15 @@ function AppHero() {
         <div id="hero" className="heroBlock">
             <Carousel>
                 {
-                    <div className='d-flex just-between'>
+                    <div className='d-flex justify-between'>
                         <div className='image-anim mobileHidden'>
                             <img className='dagentoonz-left' src={DegenToonz} alt="DegenToonz"></img>
                             <img className='cyberkongs-left' src={CyberKongs} alt="CyberKongs"></img>
                         </div>
-                        <div className="content hero-info mobile-style">
-                            <h3 className='header-title'>{item.title}</h3>
-                            <p className='col-b f-s-20'>{item.content}</p>
-                            <div className="btnHolder d-flex just-center">
+                        <div className="content hero-info mobile-style lg:max-w-xl 2xl:max-w-2xl 2xl:pt-24">
+                            <h2 className='text-3xl 2xl:text-8xl md:text-6xl'>{item.title}</h2>
+                            <h4 className='text-base 2xl:text-3xl md:text-xl'>{item.content}</h4>
+                            <div className="btnHolder d-flex just-center py-6 2xl:py-12">
                                 <Button className="voomio-btn" type="primary" shape="round" size="large">Explore</Button>
                                 <Button className="voomio-btn-outline" shape="round" size="large">Create</Button>
                             </div>

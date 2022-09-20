@@ -51,7 +51,7 @@ function AppCollection() {
         <div id="feature" className="block aboutBlock">
             <div className="container-fluid">
                 <div className="titleHolder d-flex just-between">
-                    <div className='voomio-header'>Collections</div>
+                <div className='voomio-header text-3xl lg:text-4xl 2xl:text-5xl'>Top Collections</div>
                     <div>    
                         <Select defaultValue="all" className='voomio-select mobileHidden' size='large'>
                             <Option value="all">All Categories</Option>

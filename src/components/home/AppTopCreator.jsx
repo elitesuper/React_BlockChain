@@ -65,7 +65,7 @@ function AppTopCreator() {
         <div id="feature" className="block aboutBlock">
             <div className="container-fluid">
                 <div className="titleHolder d-flex just-between">
-                    <div className='voomio-header'>Top Creators</div>
+                    <div className='voomio-header text-3xl lg:text-4xl 2xl:text-5xl'>Top Creators</div>
                 </div>
                 <Row className="row-list reveal" gutter={[16, 16]}>
                     {items.map(item => {
