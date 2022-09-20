@@ -780,3 +780,6 @@ h2{
 .activity-avatar{
   height: 90%;
 }
+.filter-tag{
+  border-radius: 10px;
+}

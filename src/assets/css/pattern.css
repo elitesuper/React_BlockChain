@@ -147,3 +147,9 @@
 .col-spec-3{
     color: #1465DD;
 }
+.m-y-auto{
+    margin: auto 5px auto 0px !important;
+}
+.m-x-auto{
+    margin: 28px auto 0px auto !important;
+}

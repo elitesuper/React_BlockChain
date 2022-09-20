@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {List, Row, Col, Menu, Button, Checkbox} from 'antd';
+import {List, Row, Col, Menu, Button, Checkbox, Tag} from 'antd';
 import {TagOutlined} from '@ant-design/icons';
 
 import ch1 from '../../assets/collections/ch1.png'
@@ -131,12 +131,15 @@ const data = [
 ]
 function ActivityTabPage(){
 
-    const [filters, Setfilter] = useState(null);
+    const [filters, Setfilter] = useState([]);
+    const changeFilter = (e, val)=>{
+        (!e.target.checked)?(Setfilter(filters => filters.filter(item=> item != val))):Setfilter(filters => [...filters, val]);
+    }
     
     const customcheck =(val) =>{
         return <div className='flex justify-between'>
             <h5>{val}</h5>
-            <Checkbox></Checkbox>
+            <Checkbox onChange={(e) => changeFilter(e, val)}></Checkbox>
         </div>
     }
       const items = [
@@ -163,7 +166,7 @@ function ActivityTabPage(){
             <Row>
                 <Col md={{span:24}} lg={{span:6}}>
                 <Menu
-                    className='wd-90 m-t-28 mx-auto'
+                    className='wd-90 m-t-28 m-x-auto'
                     mode="inline"
                     defaultOpenKeys={['sub1']}
                     items={items}
@@ -172,7 +175,8 @@ function ActivityTabPage(){
                 <Col md={{span:24}} lg={{span:18}}>
                     <div className='pt-2 pd-12 w-full h-8'>
                         <div className='flex'>
-                            <h4 className='col-spec-2'>Filters</h4>
+                            <h4 className='col-spec-2 m-y-auto text-1xl'>Filters</h4>
+                            {filters.map((item,key)=><Tag color='#6549F6' className='m-y-auto filter-tag text-base' key={key}>{item}</Tag>)}
                         </div>
                     </div>
                     <List

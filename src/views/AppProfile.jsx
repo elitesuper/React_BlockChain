@@ -21,8 +21,8 @@ function AppProfile() {
         <div className="block pd-b-0">
             <div className='pd-y-80 w-100 sub-header'>
             </div>
-            <div className='container-fluid'>
                 <div className='pd-t-20'>
+            <div className='container-fluid'>
                     <Row>
                         <Col xs={{ span: 24 }} sm={{ span: 6 }} md={{ span: 4 }}>
                             <img src={character} alt={character} className='profile-character'></img>
@@ -61,6 +61,7 @@ function AppProfile() {
                             </Row>
                         </Col>
                     </Row>
+                    </div>
                     <div className='wd-100 pd-t-20'>
                         <Tabs
                             defaultActiveKey="1"
@@ -76,7 +77,6 @@ function AppProfile() {
                         />
                     </div>
                 </div>
-            </div>
             <AppSignup></AppSignup>
         </div>
     )

@@ -121,7 +121,7 @@ function TabPage (props){
     }
 
     return (
-        <>
+        <div className="container-fluid">
         <div className="tab-header mobileHidden">
             <Button size="large" type="text" icon={<SlidersOutlined />}/>
             <Input prefix={<SearchOutlined/>} className='search-profile' style={{ width: '30%' }} size="large" placeholder="Search for assets or collections..."/>
@@ -184,7 +184,7 @@ function TabPage (props){
                 </Button>
             </Row>
         )}
-        </>
+        </div>
     )
 }
 
