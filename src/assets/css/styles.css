@@ -249,8 +249,6 @@ h2{
   font-family: 'MyPoppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 120%;
   width: 100%;
 }
 .card-cover .creator-email{
@@ -265,7 +263,6 @@ h2{
 }
 .creator-btn{
   font-family: 'MyPoppins';
-  font-size: 10px;
   width: 60%;
   color: white;
   background: linear-gradient(98.79deg, #9B53E0 20.34%, #8551E6 77.89%);
@@ -593,10 +590,6 @@ h2{
 .trend-vol img{
   margin: auto !important;
 }
-
-.creator-btn{
-  font-size: 1.5vh;
-}
 .create-vol h3{
   font-family: 'MyPoppins';
   font-style: normal;
@@ -642,9 +635,6 @@ h2{
   }
   .header .search-collection{
     display: none;
-  }
-  .card-cover h3{
-    font-size: 14px;
   }
   .create-vol h3{
     font-size: 14px;
@@ -713,11 +703,7 @@ h2{
     font-size: 2vh !important;
   }
   .creator-btn{
-    font-size: 1vh !important;
     width: 80%;
-  }
-  .card-cover h3{
-    font-size: 1vh;
   }
   .trend-title{
     font-size: 1.5vh !important;

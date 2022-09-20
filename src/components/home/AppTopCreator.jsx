@@ -55,8 +55,8 @@ const mhead = (
 const mdesc = (
     <>
         <div className='wd-100'>
-            <div className='wd-100 text-center'><Button className='creator-btn' shape='round'>+ Follow</Button></div>
-            <div className='wd-100 text-center pd-t-10'><Button className='creator-btn creator-btn-out' shape='round'>0x007...373px</Button></div>
+            <div className='wd-100 text-center text-base'><Button className='creator-btn' shape='round'>+ Follow</Button></div>
+            <div className='wd-100 text-center pd-t-10 text-base'><Button className='creator-btn creator-btn-out' shape='round'>0x007...373px</Button></div>
         </div>
     </>
 );
@@ -70,14 +70,14 @@ function AppTopCreator() {
                 <Row className="row-list reveal" gutter={[16, 16]}>
                     {items.map(item => {
                         return (
-                            <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 6 }} key={item.key}>
+                            <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }} lg={{span:6}}key={item.key}>
 
                                 <Card
                                     hoverable
                                     cover={<div className='card-cover'>
                                             <img className="creator-img" alt={item.title} src={item.image} />
-                                            <h3>Gordon Gonner</h3>
-                                            <h3 className='creator-email'>@gordongonner</h3>
+                                            <h3 className='text-base'>Gordon Gonner</h3>
+                                            <h3 className='text-base creator-email'>@gordongonner</h3>
                                         </div>}
                                 >
                                     <Meta 

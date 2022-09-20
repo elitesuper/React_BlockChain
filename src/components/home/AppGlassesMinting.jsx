@@ -48,7 +48,7 @@ function AppGlassesMinting() {
                             <img className='left_2' src={image2} alt={image2}></img>
                         </div>
                         <div className="content glasses-info">
-                                <h2 className='text-3xl 2xl:text-8xl md:text-6xl'>Glasses Minting</h2>                            <div>
+                                <h2 className='text-center text-3xl 2xl:text-8xl md:text-6xl'>Glasses Minting</h2>                            <div>
                                 {items.map(item=>(
                                     <div className='w-1-1 d-flex just-center minting-item'>
                                         <div className='w-1-3'>

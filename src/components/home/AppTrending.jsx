@@ -39,8 +39,8 @@ const items = [
 const mdesc = (
     <>
         <div className='d-flex just-between'>
-            <div className='trend-vol neue-ft'>Vol <img src={icon_ether} alt={icon_ether}></img><span>657.2k</span></div>
-            <div className='trend-vol neue-ft'>Floor <img src={icon_ether} alt={icon_ether}></img><span>70</span></div>
+            <div className='text-base md:text-xs lg:text-xl flex'>Vol <img className='m-auto' src={icon_ether} alt={icon_ether}></img><span>657.2k</span></div>
+            <div className='text-base md:text-xs lg:text-xl flex'>Floor <img className='m-auto' src={icon_ether} alt={icon_ether}></img><span>70</span></div>
         </div>
     </>
 );
@@ -69,7 +69,7 @@ function AppTrending() {
                                 >
                                     <Meta 
                                         className='trending-card'
-                                        title={<div className='trend-title'>{item.title}<img src={icon_check} alt={icon_check}></img></div>} 
+                                        title={<div className='text-1xl md:text-xs lg:text-2xl 2xl:text-3xl flex'>{item.title}<img className='my-auto' src={icon_check} alt={icon_check}></img></div>} 
                                         description={mdesc}
                                         />
                                 </Card>
