@@ -786,7 +786,10 @@ h2{
 .font-spec-1{
   font-family: 'MyNeue';
   font-style: normal;
+  font-weight: 600;
+}
+.font-spec-2{
+  font-family: 'MyNeue';
+  font-style: normal;
   font-weight: 500;
-  /* font-size: 18px; */
-  line-height: 120%;
 }
