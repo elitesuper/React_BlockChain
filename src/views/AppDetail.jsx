@@ -5,8 +5,49 @@ import { EyeOutlined, HeartOutlined,LineChartOutlined } from '@ant-design/icons'
 import detail_img from '../assets/trending/trend_3.png';
 import icon_check from '../assets/icons/BadgeCheck.png';
 
-const {Meta} = Card
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend,
+  } from 'chart.js';
 
+import Chart from 'chart.js/auto';
+
+import { Line } from 'react-chartjs-2';
+
+
+const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: false,
+        text: 'Chart.js Line Chart',
+      },
+    },
+};
+
+const labels = ['2/14', '3/16', '4/19', '5/10', '6/4', '7/20', '8/17', '9/9', '10/31', '11/20'];
+
+export const data = {
+    labels,
+    datasets: [
+      {
+        data: [2,3,4,5,6,7,5,4,7,11,14,15],
+        borderColor: '#7B61FF',
+        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      }
+    ],
+  };
+
+const {Meta} = Card
 
 const detailinfo = () => {
     return <div className='flex justify-between w-100'>
@@ -45,10 +86,14 @@ function AppDetail(props){
                         </Card>
                     </Col>
                     <Col xs={{span:24}} md={{span:14}}>
-                    <div className='flex text-1xl 2xl:text-2xl' >
-                        <LineChartOutlined className='mr-2 my-auto'/>
-                        <div className='my-auto font-spec-2'>Pricing History</div>
+                    <div className='w-5/6'>
+                        <div className='flex text-1xl 2xl:text-2xl' >
+                            <LineChartOutlined className='mr-2 my-auto'/>
+                            <div className='my-auto font-spec-2'>Pricing History</div>
+                        </div>
+                        <Line options={options} data={data} />
                     </div>
+
                     </Col>
                 </Row>
             </div>
